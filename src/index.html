@@ -6,6 +6,61 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Homepage</title>
 		<link href="/dist/output.css" rel="stylesheet" />
+		<!-- Google Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 	</head>
-	<body></body>
+	<body>
+		<!-- Header Start -->
+		<header class="bg-gray-300 absolute top-0 left-0 w-full flex items-center z-10">
+			<div class="container">
+				<div class="flex items-center justify-between relative py-2 lg:px-6">
+					<div>
+						<a href="#home"><img class="w-24 lg:w-28" src="img/logo.png" alt="logo" /></a>
+					</div>
+					<div class="flex items-center">
+						<!-- Hamburger Menu -->
+						<button id="hamburger" name="hamburger" type="button" class="block absolute right-3 lg:hidden">
+							<span class="hamburger-line origin-top-left transition duration-300"></span>
+							<span class="hamburger-line transition duration-300"></span>
+							<span class="hamburger-line origin-bottom-left transition duration-300"></span>
+						</button>
+						<!-- Navigation -->
+						<nav id="nav-menu" class="hidden absolute py-5 lg:py-3 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+							<ul class="block lg:flex">
+								<li class="group">
+									<a href="#home" class="list-navbar">Beranda</a>
+									<span class="underline-hover-sm underline-hover-lg"></span>
+								</li>
+								<li class="group">
+									<a href="#gallery" class="list-navbar">Galeri Mobil</a>
+									<span class="underline-hover-sm underline-hover-lg"></span>
+								</li>
+								<li class="group">
+									<a href="#about" class="list-navbar">Tentang Kami</a>
+									<span class="underline-hover-sm underline-hover-lg"></span>
+								</li>
+								<li class="group">
+									<a href="#account" class="list-navbar">Akun Saya</a>
+									<span class="underline-hover-sm underline-hover-lg"></span>
+								</li>
+								<div class="flex justify-center pt-3 lg:hidden">
+									<a href="#login" class="btn-navbar">Masuk</a>
+									<a href="#signup" class="btn-navbar">Daftar</a>
+								</div>
+							</ul>
+						</nav>
+					</div>
+					<div class="hidden lg:flex lg:justify-center">
+						<a href="#login" class="btn-navbar">Masuk</a>
+						<a href="#signup" class="btn-navbar">Daftar</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Header End -->
+		<!-- Script JS -->
+		<script src="script.js"></script>
+	</body>
 </html>
